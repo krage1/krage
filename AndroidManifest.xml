@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sys_alarm24"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:maxAspectRatio="@integer/material_motion_duration_long_1"
+        android:theme="@style/Theme.AndroidLessons" >
+        <receiver
+            android:name=".Clock"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="ru.krage.clock.FORCE_WIDGETS_UPDATES"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/clock_info" />
+        </receiver>
+
+        <activity
+            android:name=".ClockConfigureActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

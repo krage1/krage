@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/config"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="@color/purple_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/rgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioBrown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_brown"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/brown"/>
+
+        <RadioButton
+            android:id="@+id/radioViolet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_violet"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/violet"/>
+
+        <RadioButton
+            android:id="@+id/radioSalad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_salad"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/salad"/>
+
+        <RadioButton
+            android:id="@+id/radioRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_red"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/red"/>
+
+        <RadioButton
+            android:id="@+id/radioGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_green"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/green"/>
+
+        <RadioButton
+            android:id="@+id/radioBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_blue"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/blue"/>
+
+        <RadioButton
+            android:id="@+id/radioLightGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_light_grey"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/light_grey"/>
+
+        <RadioButton
+            android:id="@+id/radioDarkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_dark_grey"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/dark_grey"/>
+
+        <RadioButton
+            android:id="@+id/radioEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/nothing"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:textColor="@color/dark_10"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOK"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon.CenterStacked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_widget"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:strokeColor="#02136F"
+        app:strokeWidth="4dp" />
+</LinearLayout>

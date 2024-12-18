@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:id="@+id/rlBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.AndroidLessons.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/im_hour1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hour_0"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_hour2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/im_hour1"
+        android:contentDescription="@string/img_widget_description"
+        app:srcCompat="@drawable/hour_1"
+        tools:ignore="ImageContrastCheck">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_doubleDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/im_hour2"
+        android:layout_toEndOf="@id/im_hour2"
+        android:contentDescription="@string/img_widget_description"
+        android:padding="5dp"
+        app:srcCompat="@drawable/double_dot"
+        tools:ignore="ImageContrastCheck">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_minute1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hour_2"
+        android:layout_toEndOf="@id/im_doubleDot"
+        android:layout_alignBottom="@id/im_hour2"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_minute2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hour_3"
+        android:layout_toEndOf="@id/im_minute1"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/im_minute2"
+        android:layout_toEndOf="@id/im_minute2"
+        android:contentDescription="@string/img_widget_description"
+        app:srcCompat="@drawable/dot"
+        tools:ignore="ImageContrastCheck">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_second1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sec_4"
+        android:layout_toEndOf="@id/im_dot"
+        android:layout_alignBottom="@id/im_minute2"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_second2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sec_5"
+        android:layout_toEndOf="@id/im_second1"
+        android:layout_alignBottom="@id/im_second1"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_dayWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/week_1"
+        android:layout_below="@id/im_hour1"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_1"
+        android:layout_below="@id/im_dayWeek"
+        android:layout_marginStart="40dp"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_2"
+        android:layout_alignBottom="@id/im_day1"
+        android:layout_toEndOf="@id/im_day1"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_dot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/dot"
+        android:layout_alignBottom="@id/im_day2"
+        android:layout_toEndOf="@id/im_day2"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_month1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_0"
+        android:layout_toEndOf="@id/im_dot1"
+        android:layout_alignBottom="@id/im_day2"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_month2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_9"
+        android:layout_toEndOf="@id/im_month1"
+        android:layout_alignBottom="@id/im_month1"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_dot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/dot"
+        android:layout_alignBottom="@id/im_month2"
+        android:layout_toEndOf="@id/im_month2"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_year1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_2"
+        android:layout_toEndOf="@id/im_dot2"
+        android:layout_alignBottom="@id/im_dot2"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_year2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_0"
+        android:layout_alignBottom="@id/im_year1"
+        android:layout_toEndOf="@id/im_year1"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_year3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_2"
+        android:layout_toEndOf="@id/im_year2"
+        android:layout_alignBottom="@id/im_year2"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/im_year4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat = "@drawable/date_4"
+        android:layout_alignBottom="@id/im_year3"
+        android:layout_toEndOf="@id/im_year3"
+        android:contentDescription="@string/img_widget_description">
+    </ImageView>
+</RelativeLayout>
